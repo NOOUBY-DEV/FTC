@@ -1,14 +1,14 @@
-#Mon Jun 29 13:55:34 HKT 2026
-base.0=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
-base.2=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
-base.3=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
-base.4=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.5=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.6=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.7=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.8=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.9=/home/noouby/FTC/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Mon Jun 29 15:33:29 HKT 2026
+base.0=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
+base.2=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
+base.3=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
+base.4=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.5=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.6=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.7=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
+base.8=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.9=/home/noouby/FTC_CLONE/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 path.0=classes.dex
 path.1=10/classes.dex
 path.2=11/classes.dex

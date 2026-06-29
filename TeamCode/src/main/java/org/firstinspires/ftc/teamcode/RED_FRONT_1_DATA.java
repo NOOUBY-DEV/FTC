@@ -10,7 +10,8 @@ public class RED_FRONT_1_DATA
 
         public static Pose2d STARTING_POSE = new Pose2d(24, 24, Math.toRadians(45));
 
-        public static Vector2d A1 = new Vector2d(0, -12);
+        public static Vector2d A1 = new Vector2d(0, -10);
+        public static double A1_HEADING = Math.toRadians(2);
 
 
         public static Pose2d FLIP_POSE(final Pose2d POSE)
