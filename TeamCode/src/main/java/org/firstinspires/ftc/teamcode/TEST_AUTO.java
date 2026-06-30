@@ -65,7 +65,15 @@ public class TEST_AUTO extends LinearOpMode
 
                         .strafeTo(A2)
 
-                        .strafeTo(ORIGIN)
+                        .strafeToLinearHeading(new Vector2d(0, 10), STARTING.heading)
+
+                        .stopAndAdd(new SHOOT_ACTION())
+
+                        .strafeToLinearHeading(new Vector2d(0, -24), Math.toRadians(15))
+
+                        .strafeTo(new Vector2d(19, -24))
+
+                        .strafeToLinearHeading(new Vector2d(-3, 10), STARTING.heading)
 
                         .build()
                 );
@@ -86,7 +94,7 @@ public class TEST_AUTO extends LinearOpMode
                         if (!INITIALIZED)
                         {
 
-                                performSmartBurstShoot(780, 0.85, 3);
+                                performSmartBurstShoot(790, 0.85, 3);
 
                                 INITIALIZED = true;
 

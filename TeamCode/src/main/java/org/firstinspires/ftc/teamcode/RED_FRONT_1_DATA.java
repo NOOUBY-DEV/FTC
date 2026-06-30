@@ -8,15 +8,15 @@ import org.firstinspires.ftc.onbotjava.handlers.file.NewFile;
 public class RED_FRONT_1_DATA
 {
 
-        public static Pose2d STARTING_POSE = new Pose2d(19, 19, Math.toRadians(45));
+        public static Pose2d STARTING_POSE = new Pose2d(18, 18, Math.toRadians(45));
 
         public static Vector2d ORIGIN = new Vector2d(0, 0);
 
-        public static Vector2d A1 = new Vector2d(0, -10);
+        public static Vector2d A1 = new Vector2d(0, -12);
 
-        public static Vector2d A2 = new Vector2d(18, -10);
+        public static Vector2d A2 = new Vector2d(19, -12);
 
-        public static double A1_HEADING = Math.toRadians(0);
+        public static double A1_HEADING = Math.toRadians(5);
 
 
         public static Pose2d FLIP_POSE(final Pose2d POSE)
