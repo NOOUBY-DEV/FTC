@@ -3,6 +3,8 @@ package org.firstinspires.ftc.teamcode;
 
 import static org.firstinspires.ftc.teamcode.RED_FRONT_1_DATA.A1;
 import static org.firstinspires.ftc.teamcode.RED_FRONT_1_DATA.A1_HEADING;
+import static org.firstinspires.ftc.teamcode.RED_FRONT_1_DATA.A2;
+import static org.firstinspires.ftc.teamcode.RED_FRONT_1_DATA.ORIGIN;
 
 import androidx.annotation.NonNull;
 
@@ -55,12 +57,16 @@ public class TEST_AUTO extends LinearOpMode
 
                 Actions.runBlocking(DRIVE.actionBuilder(STARTING)
 
-                        .strafeTo(new Vector2d(0, 0))
+                        .strafeTo(ORIGIN)
 
                         .stopAndAdd(new SHOOT_ACTION())
 
                         .strafeToLinearHeading(A1, A1_HEADING)
-                        
+
+                        .strafeTo(A2)
+
+                        .strafeTo(ORIGIN)
+
                         .build()
                 );
 
