@@ -53,6 +53,7 @@ public class TEST_AUTO extends LinearOpMode
 
 
                 INTAKE1_MOTOR.setPower(1);
+                SHOOT_MOTOR.setVelocity(700);
 
 
                 Actions.runBlocking(DRIVE.actionBuilder(STARTING)
@@ -61,19 +62,25 @@ public class TEST_AUTO extends LinearOpMode
 
                         .stopAndAdd(new SHOOT_ACTION())
 
-                        .strafeToLinearHeading(A1, A1_HEADING)
+                        .strafeToLinearHeading(A1, Math.toRadians(5))
 
                         .strafeTo(A2)
 
-                        .strafeToLinearHeading(new Vector2d(0, 10), STARTING.heading)
+                        .strafeToLinearHeading(new Vector2d(-7, 2), -30.8)
 
                         .stopAndAdd(new SHOOT_ACTION())
 
-                        .strafeToLinearHeading(new Vector2d(0, -24), Math.toRadians(15))
+                        .strafeToLinearHeading(new Vector2d(-12, -23), Math.toRadians(-28))
 
-                        .strafeTo(new Vector2d(19, -24))
+                        .strafeTo(new Vector2d(10, -24))
 
-                        .strafeToLinearHeading(new Vector2d(-3, 10), STARTING.heading)
+                        .strafeToLinearHeading(new Vector2d(-6, 14), -31)
+
+                        .stopAndAdd(new SHOOT_ACTION())
+
+                        .strafeToLinearHeading(new Vector2d(-30, -43), Math.toRadians(-28))
+
+                        .strafeTo(new Vector2d(6, -43))
 
                         .build()
                 );
@@ -106,7 +113,7 @@ public class TEST_AUTO extends LinearOpMode
         }
 
         public void performSmartBurstShoot(double targetVel, double anglePos, int numBalls) {
-
+                INTAKE2_SERVO.setPower(1.0);
                 IS_SHOOTING = true;
 
 
@@ -115,7 +122,8 @@ public class TEST_AUTO extends LinearOpMode
 
                 // 1. 設定角度，馬達開始加速
                 ANGLE_SERVO.setPosition(anglePos);
-                SHOOT_MOTOR.setVelocity(targetVel);
+                SHOOT_MOTOR.setVelocity(700); //1050
+                INTAKE2_SERVO.setPower(1.0);
 
                 for (int i = 1; i <= numBalls; i++) {
                         ElapsedTime recoveryTimer = new ElapsedTime();
@@ -144,7 +152,7 @@ public class TEST_AUTO extends LinearOpMode
                 }
 
                 // 4. 全部打完，降回怠速
-                        SHOOT_MOTOR.setVelocity(550);
+                        SHOOT_MOTOR.setVelocity(700);
 
 
                 IS_SHOOTING = false;
